@@ -1,0 +1,118 @@
+.content {
+    position: relative;
+    width: 100%;
+    flex-basis: 50%;
+    height: 80%;
+    display: flex;
+    background-image: url("https://cdn2.slidemodel.com/wp-content/uploads/6949-01-modern-computer-desk-concept-4.jpg");
+    /* Control the height of the image */
+    min-height: 550px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  .content .cont {
+    margin-top: 16%;
+    margin-left: 16%;
+    color: white;
+    font-size: 2em;
+    font-weight: 750;
+    
+  }
+  
+  .content .cont h1 {
+    font-size: 2em;
+    font-weight: 550;
+   
+  }
+  
+.para{
+    padding-left: 12%;
+}
+
+.container{
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+.container h2{
+    font-size: 2em;
+    font-weight: 750;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.containers {
+    
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.image {
+    flex-basis:50%;
+    padding-left: 7%;
+}
+
+.text{
+    flex-basis: 50%;
+    justify-content: center;
+    padding-right:9%;
+}
+
+.container1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgb(235, 229, 229);
+}
+
+.text{
+    flex-basis: 50%;
+    justify-content: center;
+    padding: 35px;
+    text-align: left;
+    
+}
+
+.image {
+    flex-basis:50%;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+    
+}
+
+.cards .card{
+    box-shadow: 2px 2px 2px 2px #ccc;
+    width: 75%;
+}

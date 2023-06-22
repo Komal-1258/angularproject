@@ -1,0 +1,117 @@
+/*body{
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 12%;
+}*/
+
+.content {
+    position: relative;
+    width: 100%;
+    flex-basis: 50%;
+    height: 80%;
+    display: flex;
+    background-image: url("https://cancerclinic.co.nz/images/contact/ContactHeader@2x.jpg");
+    /* Control the height of the image */
+    min-height: 550px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  .content .cont {
+    margin-top: 16%;
+    margin-left: 16%;
+    color: white;
+    font-size: 2em;
+    font-weight: 750;
+    
+  }
+  
+  .content .cont h1 {
+    font-size: 2em;
+    font-weight: 550;
+   
+  }
+  
+.para{
+    justify-content: center;
+    padding-left: 20%;
+    
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  .image-container {
+    flex-basis: 50%;
+  }
+  
+  .text-container {
+    flex-basis: 50%;
+    justify-content: center;
+    padding-left: 10px;
+  }
+
+
+  .cards{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: 2rem; 
+   
+}
+
+.cards .card{
+    box-shadow: 2px 2px 2px 2px #ccc;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.cards .card .card-title{
+    text-align: center;
+}
+
+.container1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 4%;
+    background-color: rgb(235, 229, 229);
+}
+
+.text{
+    flex-basis: 50%;
+    justify-content: center;
+    padding: 35px;
+    text-align: left;
+    
+}
+
+.image {
+    flex-basis:50%;
+    background-color: white;
+}

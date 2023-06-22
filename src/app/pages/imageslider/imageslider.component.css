@@ -1,0 +1,23 @@
+.swiper-container {
+
+ -webkit-overflow-scrolling: touch;
+
+}
+
+
+
+.swiper-slide {
+  flex: 0 0 300px;
+  border: 1px solid #ebc710d8;
+  padding: 10px;
+  justify-content: space-between;
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: table;
+
+}

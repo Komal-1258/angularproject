@@ -1,0 +1,199 @@
+.content {
+    position: relative;
+    width: 100%;
+    flex-basis: 50%;
+    height: 80%;
+    display: flex;
+    background-image: url("https://t-hub.mx/storage/blog/QopQLVRlmihNPF4aWnSPKuCvV2ja4HuXTCsaM7Cw.jpeg");
+    /* Control the height of the image */
+    min-height: 550px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  .content .cont {
+    margin-top: 16%;
+    margin-left: 16%;
+    color: white;
+    font-size: 2em;
+    font-weight: 750;
+    
+  }
+  
+  .content .cont h1 {
+    font-size: 2em;
+    font-weight: 550;
+   
+  }
+
+
+.content1{
+    display: absolute;
+} 
+
+.header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+  }
+
+.paragraph p{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2rem;
+    padding: 35px;
+    border-color: yellow;
+}
+
+.container {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.image {
+    flex-basis:50%;
+}
+
+.text{
+    flex-basis: 50%;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.contents{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: rgb(235, 229, 229);
+}
+
+.text{
+    flex-basis: 50%;
+    justify-content: center;
+    padding: 35px;
+    text-align: left;
+    
+}
+
+.image {
+    flex-basis:50%;
+}
+
+.tense{
+    background-color: rgb(235, 229, 229);
+
+}
+
+.tense h2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-emphasis: bold;
+ }
+
+.tense p{
+    padding-left: 10%;
+    padding-right: 10%;
+ }
+
+
+.container1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 45px;
+}
+
+ .image{
+    flex-basis: 50%;
+ }
+
+.mixed h2{
+   justify-content: center; 
+   text-align: center;
+}
+
+.mixed p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.horizontal .card {
+    /* Add styling for the card */
+    width: 700px;
+    height: auto;
+    border: none;
+    text-align: left;
+    padding-left: 4%;
+    margin-left: 4%;
+    margin-right: 2%;
+    
+    
+  }
+  
+   .card-title{
+    text-align: center;
+    
+  
+   }
+  
+  .horizontal{
+    display: flex;
+    flex-direction:row;
+    
+   
+  
+  }
+
+  @media  screen and (max-width:768px) {
+    .cards{
+        display: block;
+        padding-left: 20%;
+        
+    }
+
+    .container,.contents , .container1{
+        display: block;
+        flex-direction: column;
+    }
+
+    
+  }
+
+
+

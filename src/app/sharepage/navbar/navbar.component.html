@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <div class="header">
+    <p>NEED HELP? TALK TO US <a class="header" href="tel:+91-9999794342" style="padding-right: 38%;">+91-9999794342</a>
+      Follow Us:
+      <a href="https://www.facebook.com/digiwareitsolutions" target="_blank"><i class="bi bi-facebook"
+          style="padding-right: 2%; padding-left: 2%;"></i></a>
+      <a href="https://www.instagram.com/digiwareitsolutions/" target="_blank"><i class="bi bi-instagram"></i></a>
+
+
+  </div>
+
+
+  <nav [ngClass]="{'sticky': isNavbarSticky}">
+    <input type="checkbox" id="nav_check" >
+    <label for="nav_check" id="checkbtn">
+      <i class="bi bi-list"></i>
+    </label>
+    
+      <img class="img" src="../assets/logo.png">
+    
+
+
+    <ul>
+      <li><a routerLink=""><i class="bi bi-house-door-fill"></i>HOME</a></li>
+      <li><a routerLink="/about">ABOUT</a></li>
+      <li class="dropdown">
+        <a routerLink="/services" class="dropbtn" >SERVICE<i class="bi bi-chevron-down"></i></a>
+        <div class="dropdown-content">
+          <div class="dropdown-submenu" >
+            <a routerLink="/softwaredevelopment"  >SOFTWARE DEVELOPMENT<i class="bi bi-caret-right-fill"></i></a>
+            <div class="dropdown-submenu-content">
+              <a id="redirectLink" >APPLICATION DEVELOPMENT</a>
+              <a href="/softwaredevelopment#ai">AI & ML-PYTHON,<br>TENSORFLOW</a>
+              <a href="/softwaredevelopment#mern">MEAN/MERN STACK DEVELOPMENT</a>
+              <a href="/softwaredevelopment#mixed">MIXED REALITY DEVELOPMENT</a>
+            </div>
+          </div>
+
+          <div class="dropdown-submenu">
+            <a routerLink="/web">WEB DEVELOPMENT<i class="bi bi-caret-right-fill"></i></a>
+            <div class="dropdown-submenu-content">
+              <a href="web#cms">CMS DEVELOPMENT</a>
+              <a href="web#eCommerce">E-COMMERCE DEVELOPMENT</a>
+              <a href="web#custom">CUSTOM WEBSITE DEVELOPMENT</a>
+              <a href="web#estate">REAL ESTATE WEBSITE DEVELOPMENT</a>
+              <a href="web#node">NODE JS DEVELOPMENT</a>
+              <a href="web#python">PYTHON DEVELOPMENT</a>
+              <a href="web#angular">ANGULAR DEVELOPMENT</a>
+              <a href="web#react">REACT DEVELOPMENT</a>
+
+            </div>
+          </div>
+          <div class="dropdown-submenu">
+            <a routerLink="/digital">DIGITAL MARKETING<i class="bi bi-caret-right-fill"></i></a>
+            <div class="dropdown-submenu-content">
+              <a href="digital#paid">PAID MARKETING</a>
+              <a href="digital#organic">ORGANIC MARKETING</a>
+
+
+            </div>
+          </div>
+          <div class="dropdown-submenu">
+            <a routerLink="/graphics">GRAPHICS DESIGN &<br> BRANDING<i class="bi bi-caret-right-fill"></i></a>
+            <div class="dropdown-submenu-content">
+              <a href="graphics#logo">LOGO BRAND & IDENTITY</a>
+              <a href="graphics#graphic">GRAPHIC DESIGN</a>
+              <a href="graphics#info">INFOGRAPHICS DESIGN</a>
+              <a href="graphics#print">PRINT DESIGN</a>
+              <a href="graphics#social">SOCIAL MEDIA POST DESIGN</a>
+              <a href="graphics#videos">EXPLANATION VIDEOS </a>
+
+
+            </div>
+          </div>
+          <div class="dropdown-submenu">
+            <a routerLink="/ui">UI/UX DESIGN<i class="bi bi-caret-right-fill"></i></a>
+            <div class="dropdown-submenu-content">
+              <a href="ui#ux">UX RESEARCH</a>
+              <a href="ui#uxtesting">UX TESTING</a>
+              <a href="ui#info">INFORMATION ARCHITECTURE</a>
+              <a href="ui#dashboard">DASHBOARD DESIGN</a>
+              <a href="ui#interaction">INTERACTION DESIGN</a>
+            </div>
+          </div>
+          <div class="dropdown-submenu">
+            <a routerLink="/sms">SMS & IVR SERVICES<i class="bi bi-caret-right-fill"></i></a>
+            <div class="dropdown-submenu-content">
+              <a href="sms#bulk">BULK SMS SERVICES</a>
+              <a href="sms#cloud">CLOUD TELEPHONY</a>
+              <a href="sms#lead">LEAD MENTOR</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a routerLink="blog">BLOG</a></li>
+      <li><a routerLink="contact">CONTACT US</a></li>
+      <li class="d-flex" role="consult">
+        <button class="btn" type="submit" (click)="toggleForm()">Consult Now</button>
+      </li>
+    </ul>
+  </nav>
+  <div class="form">
+    <form *ngIf="showForm" class="popup">
+
+        <legend>GET FREE CONSULTATION</legend>
+        <input type="text" name="name" placeholder="Name"><br><br>
+
+        <div class="dropdown">
+            <button class="dropdown-button">
+                <a><span class="fi fi-us"></span><i class="bi bi-caret-down-fill"></i></a>
+            </button>
+            <div class="dropdown-content">
+                <a><span class="fi fi-in"></span>+91</a>
+                <a><span class="fi fi-au"></span>+61</a>
+                <a><span class="fi fi-af"></span>+93</a>
+                <a><span class="fi fi-bd"></span>+880</a>
+                <a><span class="fi fi-us"></span>+1</a>
+                <a><span class="fi fi-ar"></span>+54</a>
+                <a><span class="fi fi-ca"></span>+1</a>
+                <a><span class="fi fi-br"></span>+55</a>
+                <a><span class="fi fi-ch"></span>+86</a>
+                <a><span class="fi fi-in"></span>+91</a>
+                <a><span class="fi fi-au"></span>+61</a>
+                <a><span class="fi fi-af"></span>+93</a>
+                <!-- Add more options as needed -->
+            </div>
+            <input type="tel" placeholder="phone">
+        </div>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        <select id="service" name="service">
+            <option value="required service">Required Service</option>
+            <option value="Software Development">Software Development</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="UX Design">UX Design</option>
+            <option value="Graphics Design & Branding">Graphics Design & Branding</option>
+            <option value="SMS & IVR Services">SMS & IVR Services</option>
+        </select><br><br>
+        <input type="text" class="text" placeholder="How can we help you?"><br><br>
+        <button class="btn">SEND MESSAGE</button>
+
+    </form>
+
+
+</div>
+</body>
+
+</html>

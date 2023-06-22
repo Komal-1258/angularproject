@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <h5>Blog</h5>
+        <a routerLink="">HOME</a>
+        <p> > BLOGPAGE2</p>
+    </div><br><br>
+    <div class="gallery">
+        <div class="gallery-item">
+            <a routerLink="/blogseo"><img src="../assets/seo.jpg" alt="Image 1" [style.height.px]="300"
+                    [style.width.px]="350"></a>
+            <div class="gallery-caption">
+                <a routerLink="/blogseo" class="header">
+                    <h5>Digital Marketing Strategies:Boosting Your Business With SEO</h5>
+                </a>
+                <p class=" text-secondary">Digital marketing has become an essential tool for businesses to reach their
+                    target audience effectively. Among the...</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <a routerLink="/blogfinance"><img src="../assets/fs.jpg" alt="Image 1" [style.height.px]="300"
+                    [style.width.px]="350"></a>
+            <div class="gallery-caption">
+                <a routerLink="/blogfinance" class="header">
+                    <h5>Financial Services - Five Ways to Start</h5>
+                </a>
+                <p class=" text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy...</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <a routerLink="/blogseo"><img src="../assets/common.jpg" alt="Image 1" [style.height.px]="300"
+                    [style.width.px]="350"></a>
+            <div class="gallery-caption">
+                <a routerLink="/blogui" class="header">
+                    <h5>Common mistakes when managing finances</h5>
+                </a>
+                <p class=" text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy...</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <a routerLink="/blogseo"><img src="../assets/tips.jpg" alt="Image 1" [style.height.px]="300"
+                    [style.width.px]="350"></a>
+            <div class="gallery-caption">
+                <a routerLink="/blogui" class="header">
+                    <h5>Tips for Digitizing Financial Services</h5>
+                </a>
+                <p class=" text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy...</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <a routerLink="/blogseo"><img src="../assets/de.jpg" alt="Image 1" [style.height.px]="300"
+                    [style.width.px]="350"></a>
+            <div class="gallery-caption">
+                <a routerLink="/blogui" class="header">
+                    <h5>Winning the Race for Digital commerce</h5>
+                </a>
+                <p class=" text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy...</p>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" routerLink="/blog">Previous</a></li>
+            <li class="page-item"><a class="page-link" routerLink="/blog">1</a></li>
+            <li class="page-item">
+                <a class="page-link" routerLink="/blog2">2</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
