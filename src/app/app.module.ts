@@ -30,10 +30,10 @@ import { SmsComponent } from './pages/sms/sms.component';
 import { Blog2Component } from './pages/blog2/blog2.component';
 import { FormComponent } from './pages/form/form.component';
 import { CardsliderComponent } from './pages/cardslider/cardslider.component';
-import { ImagesliderComponent } from './pages/imageslider/imageslider.component';
 import { BlogseoComponent } from './pages/blogseo/blogseo.component';
 import { BlogfinanceComponent } from './pages/blogfinance/blogfinance.component';
 import { ConnectComponent } from './sharepage/connect/connect.component';
+import { ImagesliderComponent } from './pages/imageslider/imageslider.component';
 
 
 
@@ -67,10 +67,10 @@ import { ConnectComponent } from './sharepage/connect/connect.component';
     Blog2Component,
     FormComponent,
     CardsliderComponent,
-    ImagesliderComponent,
     BlogseoComponent,
     BlogfinanceComponent,
     ConnectComponent,
+    ImagesliderComponent,
     
     
   ],

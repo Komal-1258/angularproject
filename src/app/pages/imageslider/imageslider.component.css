@@ -1,23 +1,25 @@
-.swiper-container {
-
- -webkit-overflow-scrolling: touch;
-
-}
-
-
-
-.swiper-slide {
-  flex: 0 0 300px;
-  border: 1px solid #ebc710d8;
-  padding: 10px;
-  justify-content: space-between;
-  margin-right: 3%;
-  margin-bottom: 3%;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  display: table;
-
-}
+.image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+  }
+  
+  .image-container {
+    display: flex;
+  }
+  
+  .image {
+    margin-right: 10px;
+    border: 1px solid #eac211;
+  }
+  
+  .image:last-child {
+    margin-right: 0;
+  }
+  
+  
