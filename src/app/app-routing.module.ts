@@ -27,6 +27,9 @@ import { CardsliderComponent } from './pages/cardslider/cardslider.component';
 import { BlogseoComponent } from './pages/blogseo/blogseo.component';
 import { BlogfinanceComponent } from './pages/blogfinance/blogfinance.component';
 import { ImagesliderComponent } from './pages/imageslider/imageslider.component';
+import { BlogcommonComponent } from './pages/blogcommon/blogcommon.component';
+import { BlogdigitalComponent } from './pages/blogdigital/blogdigital.component';
+import { BlogtipsComponent } from './pages/blogtips/blogtips.component';
 
 
 const routes: Routes = [
@@ -56,7 +59,10 @@ const routes: Routes = [
   {path:'cardslider',component:CardsliderComponent},
   {path:'blogseo',component:BlogseoComponent},
   {path:'blogfinance',component:BlogfinanceComponent},
-  {path:'imageslider',component:ImagesliderComponent}
+  {path:'imageslider',component:ImagesliderComponent},
+  {path:'blogcommon',component:BlogcommonComponent},
+  {path:'blogdigital',component:BlogdigitalComponent},
+  {path:'blogtips',component:BlogtipsComponent},
   
   
 ];

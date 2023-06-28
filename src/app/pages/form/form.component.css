@@ -59,7 +59,7 @@ form legend {
 /* Dropdown content */
 .dropdown-content {
   display: none;
-  position: fixed;
+  position: absolute;
   max-height: 200px;
   overflow-y: scroll;
   background-color: white;

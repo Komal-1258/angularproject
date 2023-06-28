@@ -107,25 +107,25 @@ export class CardsliderComponent {
       title: 'Card 13',
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
       image: '../assets/common.jpg',
-      imageLink: 'path/to/card2-image-link',
+      imageLink: '/blogcommon',
       headingLink: 'Common mistakes when managing finances',
-      headingLinkUrl: 'path/to/card2-heading-link-url'
+      headingLinkUrl: '/blogcommon'
     },
     {
       title: 'Card 14',
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
       image: '../assets/tips.jpg',
-      imageLink: 'path/to/card2-image-link',
+      imageLink: '/blogtips',
       headingLink: 'Tips for Digitizing Financial Services',
-      headingLinkUrl: 'path/to/card2-heading-link-url'
+      headingLinkUrl: '/blogtips'
     },
     {
       title: 'Card 15',
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
       image: '../assets/de.jpg',
-      imageLink: 'path/to/card2-image-link',
+      imageLink: '/blogdigital',
       headingLink: 'Winning the Race for Digital commerce',
-      headingLinkUrl: 'path/to/card2-heading-link-url'
+      headingLinkUrl: '/blogdigital'
     },
     // Add more card objects as needed
   ];

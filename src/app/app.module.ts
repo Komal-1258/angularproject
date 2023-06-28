@@ -34,6 +34,9 @@ import { BlogseoComponent } from './pages/blogseo/blogseo.component';
 import { BlogfinanceComponent } from './pages/blogfinance/blogfinance.component';
 import { ConnectComponent } from './sharepage/connect/connect.component';
 import { ImagesliderComponent } from './pages/imageslider/imageslider.component';
+import { BlogcommonComponent } from './pages/blogcommon/blogcommon.component';
+import { BlogtipsComponent } from './pages/blogtips/blogtips.component';
+import { BlogdigitalComponent } from './pages/blogdigital/blogdigital.component';
 
 
 
@@ -71,6 +74,9 @@ import { ImagesliderComponent } from './pages/imageslider/imageslider.component'
     BlogfinanceComponent,
     ConnectComponent,
     ImagesliderComponent,
+    BlogcommonComponent,
+    BlogtipsComponent,
+    BlogdigitalComponent,
     
     
   ],
